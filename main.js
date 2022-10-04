@@ -3,6 +3,7 @@ $(document).ready(function() {
     $( "#one" ).click(function() {
         $(".itemlist ").append('<li> Csirkehús <i>239</i> </li>');
         calories += 239;
+        let button = createDeleteButton()
         $("#caloriecounter ").text('A jelenlegi kalória mennyisége: ' + JSON.stringify(calories));
       });
       $( "#two" ).click(function() {
@@ -22,3 +23,11 @@ $(document).ready(function() {
         $( ".itemlist" ).empty();
       })
 })
+
+function createDeleteButton() {
+    return $('<button/>', {
+        text: 'Törlés',
+        id: 'btn_delete',
+        click: function (){$(this).empty()}
+    });
+}
