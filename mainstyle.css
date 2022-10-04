@@ -11,3 +11,9 @@
     margin-top: 20px;
     border: grey 3px solid;
 }
+#secondrow{
+    align-items: center;
+}
+.itemlist{
+    margin: auto;
+}
