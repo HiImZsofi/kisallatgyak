@@ -15,4 +15,10 @@ $(document).ready(function() {
         calories += 271;
         $("#caloriecounter ").text('A jelenlegi kalória mennyisége: ' + JSON.stringify(calories));
       });
+
+      $("#delete").click(function() {
+        calories = 0;
+        $("#caloriecounter ").text('A jelenlegi kalória mennyisége: ' + JSON.stringify(calories));
+        $( ".itemlist" ).empty();
+      })
 })
